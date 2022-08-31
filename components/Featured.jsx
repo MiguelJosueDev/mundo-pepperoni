@@ -3,7 +3,6 @@ import { useState } from 'react';
 import styles from '../styles/Featured.module.css';
 
 
-
 const Featured = () => {
     const [index , setIndex] = useState(0);
     const images = [
