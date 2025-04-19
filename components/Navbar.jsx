@@ -10,9 +10,9 @@ const Navbar = () => {
     return (
       <div className={styles.container}>
           <div className={styles.item}>
-          <div className={styles.callButton} onClick="">
+          <div className={styles.callButton}>
             
-            <Image src='/img/telephone.png' alt="" width="30" height="30"/>
+            <Image src='/img/telephone.png' alt="" width={30} height={30}/>
           </div>
           <div className={styles.texts}>
             <div className={styles.text}>ORDENA AHORA!</div>
@@ -26,7 +26,7 @@ const Navbar = () => {
               </Link>
               <li className={styles.listItem}>Ofertas</li>
               <li className={styles.listItem}>Menu</li>
-              <Image src='/img/mundo_pepperoni_logo1.png' alt="" width='100' height='100'/>
+              <Image src='/img/mundo_pepperoni_logo1.png' alt="" width={100} height={100}/>
               <li className={styles.listItem}>Eventos</li>
               <li className={styles.listItem}>Blog</li>
               <li className={styles.listItem}>Contacto</li>
@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link href="/cart" passHref>
           <div className={styles.item}>
             <div className={styles.cart}>
-            <Image src='/img/cart.png' alt="" width="30px" height="30px"/>
+            <Image src='/img/cart.png' alt="" width={30} height={30}/>
             <div className={styles.counter}>{quantity}</div>
             </div>
           </div>

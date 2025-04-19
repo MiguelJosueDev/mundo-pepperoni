@@ -1,38 +1,137 @@
 .container {
-    width: 22%;
-    padding: 10px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
 
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.imageContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.pizzaImage {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.imageContainer:hover .pizzaImage {
+    transform: rotate(10deg);
+}
+
+.pizzaBadge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e31837;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
 .title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    color: red;
+    color: #e31837;
+    margin: 10px 0;
+    text-align: center;
 }
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #666;
-}
+
 .desc {
     text-align: center;
-    color: #777;
-    
-
+    color: #555;
+    margin-bottom: 15px;
+    height: 40px;
+    overflow: hidden;
 }
-@media screen and (max-width: 480px) {
+
+.priceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.priceItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fdf2e0;
+    border-radius: 8px;
+    padding: 6px;
+    min-width: 85px;
+}
+
+.size {
+    font-size: 11px;
+    font-weight: bold;
+    color: #e31837;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.button {
+    background-color: #e31837;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c41230;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .container {
         width: 100%;
+        margin: 10px 0;
     }
-    .title{
-        font-size: 26px; 
+    
+    .priceContainer {
+        justify-content: center;
     }
+    
+    .title {
+        font-size: 22px;
+    }
+    
     .price {
-        font-size: 36px;
+        font-size: 16px;
     }
 }
