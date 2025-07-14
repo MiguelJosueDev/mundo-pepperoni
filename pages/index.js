@@ -53,8 +53,8 @@ export default function Home({ pizzas, error }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Mundo Pepperoni</title>
-        <meta name="description" content="Las mejores pizzas de la ciudad" />
+        <title>Mundo Pepperoni - Las Mejores Pizzas</title>
+        <meta name="description" content="Las mejores pizzas artesanales de Tehuacán" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured />
